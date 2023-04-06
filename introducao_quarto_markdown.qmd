@@ -37,4 +37,8 @@ O Quarto conta com uma implementação atrativa de output como:
 
 -   Suporte para outras linguagens
 
+-   Chunks mais organizados
+
 O Quarto permite fazer a mudança de formatos (por exemplo, de PDF para HTML) facilmente. No YAML do arquivo, podemos subsituir e trocar o output de interesse sem modificar o conteúdo de nosso documento.
+
+Opções de configuração para todo o documento podem ser definidas no próprio YAML através da função ***execute***. Essa é mais uma vantagem em relação ao R Markdown em que é preciso definir um código mais complexo no início do documento.
