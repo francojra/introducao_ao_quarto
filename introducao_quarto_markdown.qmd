@@ -20,3 +20,5 @@ O Quarto produz diferentes arquivos como **PDF, HTML, Word, sites, livros, apres
 [![](quarto_schematic.png){fig-align="center" width="400"}](https://ucsb-meds.github.io/creating-quarto-websites/)
 
 O Quarto pode ser utilizado por **pesquisadores, desenvolvedores e educadores**.
+
+O R Markdown conta com diversos pacotes que podem ser baixados no R para executar diveras funções, entre eles, **blogdown, rticles, xaringan, distill, knitr, bookdown, flexdashboard e rsconnect**. A vantagem do Quarto em relação a isso, é que ele unifica a funcionalidade de todos esses pacotes em uma interface de linha de comando sem precisar fazer o download desses pacotes.
