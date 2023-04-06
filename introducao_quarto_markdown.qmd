@@ -13,4 +13,8 @@ Quarto capacita o usuário a tecer um documento com conteúdo de texto e código
 
 O Quarto tem a vantagem de unificar e estender o ecossistema do R Markdown, portanto, ele serve bem para quem já faz uso diário do R Markdown, mas também serve para não usuários do R Markdown.
 
-## 
+O Quarto funciona em diferentes linguagens de programação como o **R, Python, Julia e Observable**.
+
+O Quarto produz diferentes arquivos como PDF, HTML, Word, sites, livros, apresentações, artigos científicos e blogs.
+
+[![](quarto_schematic.png){fig-align="center" width="801"}](https://ucsb-meds.github.io/creating-quarto-websites/)
