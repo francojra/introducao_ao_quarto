@@ -36,3 +36,5 @@ O Quarto conta com uma implementação atrativa de output como:
 -   Sintaxe informativa de erros
 
 -   Suporte para outras linguagens
+
+O Quarto permite fazer a mudança de formatos (por exemplo, de PDF para HTML) facilmente. No YAML do arquivo, podemos subsituir e trocar o output de interesse sem modificar o conteúdo de nosso documento.
