@@ -70,19 +70,18 @@ Nesse arquivo .yml você encontrará essas principais estruturas de configuraç�
 4.  **Lang**: língua do website (português, inglês, espanhol, etc.).
 
 ```{mermaid}
-flowchart LR
+flowchart TB
   A(File) --> B(New File)
   B --> C(New Project)
   C --> D(New Directory)
   D --> E(Quarto Website)
-```
-
-```{mermaid}
-flowchart LR
-A(Arquivo .yml)
-  A --> B[Project]
-  A --> C[Website]
-  A --> D[Format]
+  E --> F(Arquivo .yml)
+  F <--> G[Project]
+  F <-->H[Website]
+  F <--> I[Format]
+  E --> J(Arquivos .qmd)
+  J <--> K[index.qmd]
+  J <--> L[hello.qmd]
 ```
 
 Os diagramas acima foram feitos com a linguagem ***mermaid*** que está no Quarto e é feito dentro de um chunk.
