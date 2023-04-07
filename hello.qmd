@@ -1,9 +1,0 @@
----
-title: "Welcome"
-format: html
-editor: visual
----
-
-## Quarto
-
-Bem vindo ao site "Hello, Quarto".
