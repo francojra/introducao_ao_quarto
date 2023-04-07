@@ -49,4 +49,22 @@ Opções de configuração para todo o documento podem ser definidas no próprio
 
 Com o Quarto você pode criar e publicar sites de forma muito rápida e fácil. Para isso você pode seguir essas etapas:
 
-1.  Abra
+1.  Clique em **File** na aba de ferramentas do RStudio;
+
+2.  Clique em **New Project** e **New Directory**;
+
+3.  Clique em **Quarto Website**.
+
+Após isso, você indicará o diretório do computador em que irá hospedar o seu projeto. No projeto você encontrará dois arquivos .qmd e um arquivo .yml. Nos arquivos .qmd você adicionará os conteúdos do seu site e no arquivo .yml você encontrará as configurações do seu site como apresentado na figura abaixo:
+
+![Arquivo .yml para Website criado no Quarto.](site_quarto.png){fig-align="center" width="600"}
+
+Nesse arquivo .yml você ecnontrará essas principais estruturas de configuração:
+
+1.  **Project**: indicação do tipo de projeto, no caso, website;
+
+2.  **Website**: Configurações do site, como título, abas, conteúdo presente em cada aba (arquivos .qmd), localização das abas no lado esquerdo ou direito, etc;
+
+3.  **Format**: tipo de arquivo (HTML), o tema para estética do site, a indicação do arquivo css, entre outros estilos;
+
+4.  **Lang**: língua do website (português, inglês, espanhol, etc.).
