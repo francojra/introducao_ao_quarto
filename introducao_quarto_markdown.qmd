@@ -68,3 +68,11 @@ Nesse arquivo .yml você encontrará essas principais estruturas de configuraç�
 3.  **Format**: tipo de arquivo (HTML), o tema (***theme***) para estética do site, a indicação do arquivo ***css***, entre outros estilos;
 
 4.  **Lang**: língua do website (português, inglês, espanhol, etc.).
+
+```{mermaid}
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two]
+```
