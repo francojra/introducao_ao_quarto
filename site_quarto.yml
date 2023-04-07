@@ -5,4 +5,5 @@ website:
   title: Quarto
   navbar: 
     left:
-      - href:
+      - index.qmd
+      - hello.qmd

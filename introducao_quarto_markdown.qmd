@@ -57,4 +57,4 @@ Com o Quarto você pode criar e publicar sites de forma muito rápida e fácil. 
 
 4.  Nesse arquivo ***site_quarto.yml*** é onde você irá colocar as informações sobre o site. Nele você deve definir: o projeto (**project**) do tipo (**type**) site (**website**). Em ***Website*** defina um título (**title**) do seu projeto.
 
-5.  Agora adicione uma barra de navegação (**navbar**) em que você irá indicar os nomes das abas do site onde estarão os arquivos ***hello***.***qmd*** e ***index.qmd***
+5.  Agora adicione uma barra de navegação (**navbar**) em que você irá indicar os nomes das abas na direita (**right**) ou na esquerda (**left**) do site onde estarão os arquivos ***hello***.***qmd*** e ***index.qmd***.
