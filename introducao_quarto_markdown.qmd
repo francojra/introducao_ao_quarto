@@ -21,6 +21,8 @@ O Quarto produz diferentes arquivos como **PDF, HTML, Word, sites, livros, apres
 
 O Quarto pode ser utilizado por **pesquisadores, desenvolvedores e educadores**.
 
+## Vantagens em relação ao R Markdown
+
 O R Markdown conta com diversos pacotes que podem ser baixados no R para executar diveras funções, entre eles, **blogdown, rticles, xaringan, distill, knitr, bookdown, flexdashboard e rsconnect**. A vantagem do Quarto em relação a isso, é que ele unifica a funcionalidade de todos esses pacotes em uma interface de linha de comando sem precisar fazer o download desses pacotes.
 
 O Quarto conta com uma implementação atrativa de output como:
@@ -42,3 +44,15 @@ O Quarto conta com uma implementação atrativa de output como:
 O Quarto permite fazer a **mudança de formatos** (por exemplo, de PDF para HTML) facilmente. No YAML do arquivo, podemos subsituir e trocar o output de interesse sem modificar o conteúdo de nosso documento.
 
 Opções de configuração para todo o documento podem ser definidas no próprio YAML através da função ***execute***. Essa é mais uma vantagem em relação ao R Markdown em que é preciso definir um código mais complexo no início do documento.
+
+## Criação de websites
+
+Com o Quarto você pode criar e publicar sites de forma muito rápida e fácil. Para isso você pode seguir essas etapas:
+
+1.  Abra um novo documento Quarto em HTML e salve com o nome ***index***, então ele irá apresentar um arquivo ***index.qmd***;
+
+2.  Novamente, abra um novo arquivo .qmd e nomeie de ***hello***.***qmd***;
+
+3.  Abra um novo documento, dessa vez como arquivo de texto (Text File), salve e nomeie como ***site_quarto.yml***;
+
+4.  Nesse arquivo ***site_quarto.yml*** é onde você irá colocar as informações sobre o site.
