@@ -49,12 +49,4 @@ Opções de configuração para todo o documento podem ser definidas no próprio
 
 Com o Quarto você pode criar e publicar sites de forma muito rápida e fácil. Para isso você pode seguir essas etapas:
 
-1.  Abra um novo documento Quarto em HTML e salve com o nome ***index***, então ele irá apresentar um arquivo ***index.qmd***;
-
-2.  Novamente, abra um novo arquivo .qmd e nomeie de ***hello***.***qmd***;
-
-3.  Abra um novo documento, dessa vez como arquivo de texto (Text File), salve e nomeie como ***site_quarto.yml***;
-
-4.  Nesse arquivo ***site_quarto.yml*** é onde você irá colocar as informações sobre o site. Nele você deve definir: o projeto (**project**) do tipo (**type**) site (**website**). Em ***Website*** defina um título (**title**) do seu projeto.
-
-5.  Agora adicione uma barra de navegação (**navbar**) em que você irá indicar os nomes das abas na direita (**right**) ou na esquerda (**left**) do site onde estarão os arquivos ***hello***.***qmd*** e ***index.qmd***.
+1.  Abra
