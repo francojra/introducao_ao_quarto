@@ -71,8 +71,18 @@ Nesse arquivo .yml você encontrará essas principais estruturas de configuraç�
 
 ```{mermaid}
 flowchart LR
-  A[Hard edge] --> B(Round edge)
-  B --> C{Decision}
-  C --> D[Result one]
-  C --> E[Result two]
+  A(File) --> B(New File)
+  B --> C(New Project)
+  C --> D(New Directory)
+  D --> E(Quarto Website)
 ```
+
+```{mermaid}
+flowchart LR
+A(Arquivo .yml)
+  A --> B[Project]
+  A --> C[Website]
+  A --> D[Format]
+```
+
+Os diagramas acima foram feitos com a linguagem ***mermaid*** que está no Quarto e é feito dentro de um chunk.
