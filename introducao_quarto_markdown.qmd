@@ -88,7 +88,9 @@ Os diagramas acima foram feitos com a linguagem ***mermaid*** que está no Quart
 
 ## Algumas dicas especiais do Quarto
 
-1.  No cabeçalho YAML é possível adicionar o argumento ***code-link: true***. Esse argumento permite que os leitores tenham acesso a links dos sites com informações sobre os códigos. Por exemplo, no código ***ggplot***, o leitor poderá clicar nele e acessar o site com informações do pacote ***ggplot2***.
+1.  No cabeçalho YAML é possível adicionar o argumento ***code-link: true***. Esse argumento permite que os leitores tenham acesso a links dos sites com informações sobre os códigos. Por exemplo, no código ***ggplot***, o leitor poderá clicar nele e acessar o site com informações do pacote ***ggplot2***. Essa funcionalidade pode servir como uma importante ferramenta de ensino.
+
+2.  No formato de apresentações ***reaveals.js*** podemos adicionar o argumento ***chalkboard: true*** no cabeçalho YAML e obter ferramentas de ensino como quadro-negro e expansão de partes dos slides durante a apresentação.
 
 ## Referências
 
