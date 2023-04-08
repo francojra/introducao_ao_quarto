@@ -92,6 +92,8 @@ Os diagramas acima foram feitos com a linguagem ***mermaid*** que está no Quart
 
 2.  No formato de apresentações ***reaveals.js*** podemos adicionar o argumento ***chalkboard: true*** no cabeçalho YAML e obter ferramentas de ensino como quadro-negro e expansão de partes dos slides durante a apresentação.
 
+3.  Citação de referências de pacotes do R.
+
 ## Referências
 
 [10 dicas para programar melhor em RMarkdown/Quarto](https://www.youtube.com/watch?v=YMGZQmMK2C8)
