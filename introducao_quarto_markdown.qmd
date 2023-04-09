@@ -102,13 +102,20 @@ Os diagramas acima foram feitos com a linguagem ***mermaid*** que está no Quart
     here::here("cat.png")
     ```
 
-5.  Organização de chunks com \|#
+5.  Organização de chunks com \|#, onde cada argumento de configuração fica um abaixo do outro e não ao lado e separado por vírgula como no R Markdown.
 
     ```{r}
     #| echo: true                                  
     #| out.width: "50%"
     #| fig.align: "center"                        
     #| fig.cap: "Um gatinho." 
+  
+    # Exemplo:
+    
+    # #| echo: true                                  
+    # #| out.width: "50%"
+    # #| fig.align: "center"                        
+    # #| fig.cap: "Um gatinho." 
 
     knitr::include_graphics("cat.png")
     ```
