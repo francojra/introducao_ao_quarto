@@ -96,7 +96,7 @@ Os diagramas acima foram feitos com a linguagem ***mermaid*** que está no Quart
 
 4.  Encontrar caminhos de pastas com ***here***. Mesmo sem está no diretório da pasta, podemos executar os códigos usando o ***here***.
 
-    ```{r}
+    ```{r, eval = TRUE}
     #install.packages("here")
     here::here()
     here::here("cat.png")
