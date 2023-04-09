@@ -105,21 +105,17 @@ Os diagramas acima foram feitos com a linguagem ***mermaid*** que está no Quart
 5.  Organização de chunks com \|#
 
     ```{r}
-    #| echo = true                                  
-    #| out.width = "50%"
-    #| fig.align = "center"                        
-    #| fig.cap = "Um gatinho." 
+    #| echo: true                                  
+    #| out.width: "50%"
+    #| fig.align: "center"                        
+    #| fig.cap: "Um gatinho." 
 
     knitr::include_graphics("cat.png")
     ```
 
 6.  Mudança de chunks do R Markdown para chunks com \|#
 
-    ```{r, echo = FALSE, eval = FALSE, out.width = "50%", fig.align = 'center', fig.cap = "Um gatinho."}
-
-    knitr::include_graphics("cat.png")
-
-    ## Para conventer os argumentos de chunk de todo documento do formato R Markdown para Quarto podemos usar:
+    ```{r, echo = TRUE, results = "hide", message = FALSE, warning = FALSE, out.width = "50%", fig.align = 'center', fig.cap = "Um gatinho."}
 
     knitr::convert_chunk_header(input = "C:/Users/jeann/OneDrive/Área de Trabalho/introducao_quarto_markdown.qmd", type
     = "multiline")
