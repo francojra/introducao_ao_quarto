@@ -97,16 +97,32 @@ Os diagramas acima foram feitos com a linguagem ***mermaid*** que está no Quart
 4.  Encontrar caminhos de pastas com ***here***. Mesmo sem está no diretório da pasta, podemos executar os códigos usando o ***here***.
 
     ```{r}
-    install.packages("here")
+    #install.packages("here")
     here::here()
-    here::here("styles.css")
+    here::here("cat.png")
     ```
 
 5.  Organização de chunks com \|#
 
-    ```{r, echo=FALSE, out.width="50%", fig.align='center', fig.cap="Um gatinho."}
-    knitr::include_graphics(here::here("images/cat.png"))
+    ```{r}
+    #| echo = true                                  
+    #| out.width = "50%"
+    #| fig.align = "center"                        
+    #| fig.cap = "Um gatinho." 
 
+    knitr::include_graphics("cat.png")
+    ```
+
+6.  Mudança de chunks do R Markdown para chunks com \|#
+
+    ```{r, echo = FALSE, eval = FALSE, out.width = "50%", fig.align = 'center', fig.cap = "Um gatinho."}
+
+    knitr::include_graphics("cat.png")
+
+    ## Para conventer os argumentos de chunk de todo documento do formato R Markdown para Quarto podemos usar:
+
+    knitr::convert_chunk_header(input = "C:/Users/jeann/OneDrive/Área de Trabalho/introducao_quarto_markdown.qmd", type
+    = "multiline")
     ```
 
 ## Referências
