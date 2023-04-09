@@ -94,6 +94,21 @@ Os diagramas acima foram feitos com a linguagem ***mermaid*** que está no Quart
 
 3.  Citação de referências de pacotes do R.
 
+4.  Encontrar caminhos de pastas com ***here***. Mesmo sem está no diretório da pasta, podemos executar os códigos usando o ***here***.
+
+    ```{r}
+    install.packages("here")
+    here::here()
+    here::here("styles.css")
+    ```
+
+5.  Organização de chunks com \|#
+
+    ```{r, echo=FALSE, out.width="50%", fig.align='center', fig.cap="Um gatinho."}
+    knitr::include_graphics(here::here("images/cat.png"))
+
+    ```
+
 ## Referências
 
 [10 dicas para programar melhor em RMarkdown/Quarto](https://www.youtube.com/watch?v=YMGZQmMK2C8)
