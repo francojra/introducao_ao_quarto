@@ -1,7 +1,7 @@
 ---
 title: "Introdução ao Quarto"
 author: "Jeanne Franco"
-format: pdf
+format: html
 editor: visual
 ---
 
@@ -143,6 +143,14 @@ knitr::write_bib(c("car","ggplot2"), "packages.bib")
     knitr::convert_chunk_header(input = "C:/Users/jeann/OneDrive/Área de Trabalho/introducao_quarto_markdown.qmd", type
     = "multiline")
     ```
+
+7.  Adicionar ícones ao texto com o Font Awesome Extension.
+
+--- Instalação no terminal do RStudio: ***quarto install extension quarto-ext/fontawesome***
+
+Visite o [link](https://github.com/quarto-ext/fontawesome) para adicionar exemplos de ícones como esse:
+
+{{< fa brands github size=5x >}}
 
 ## Referências
 
