@@ -74,13 +74,12 @@ flowchart LR
   A(File) --> B(New File)
   B --> C(New Project)
   C --> D(New Directory)
-  D --> E(Quarto Website)
+  D --> E{Quarto Website}
 ```
 
 ```{mermaid}
 flowchart LR
-  D -->  E(Quarto Website)
-  E -->  F(Arquivo .yml)
+  E{Quarto Website} --> F(Arquivo .yml)
   F <--> G[Project]
   F <--> H[Website]
   F <--> I[Format]
@@ -88,8 +87,7 @@ flowchart LR
 
 ```{mermaid}
 flowchart LR
-  D -->  E(Quarto Website)
-  E -->  J(Arquivos .qmd)
+  E{Quarto Website} --> J(Arquivos .qmd)
   J <--> K[index.qmd]
   J <--> L[hello.qmd]
 ```
