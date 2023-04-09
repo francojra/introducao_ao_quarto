@@ -70,16 +70,26 @@ Nesse arquivo .yml você encontrará essas principais estruturas de configuraç�
 4.  **Lang**: língua do website (português, inglês, espanhol, etc.).
 
 ```{mermaid}
-flowchart TB
+flowchart LR
   A(File) --> B(New File)
   B --> C(New Project)
   C --> D(New Directory)
   D --> E(Quarto Website)
-  E --> F(Arquivo .yml)
+```
+
+```{mermaid}
+flowchart LR
+  D -->  E(Quarto Website)
+  E -->  F(Arquivo .yml)
   F <--> G[Project]
-  F <-->H[Website]
+  F <--> H[Website]
   F <--> I[Format]
-  E --> J(Arquivos .qmd)
+```
+
+```{mermaid}
+flowchart LR
+  D -->  E(Quarto Website)
+  E -->  J(Arquivos .qmd)
   J <--> K[index.qmd]
   J <--> L[hello.qmd]
 ```
@@ -93,6 +103,14 @@ Os diagramas acima foram feitos com a linguagem ***mermaid*** que está no Quart
 2.  No formato de apresentações ***reaveals.js*** podemos adicionar o argumento ***chalkboard: true*** no cabeçalho YAML e obter ferramentas de ensino como quadro-negro e expansão de partes dos slides durante a apresentação.
 
 3.  Citação de referências de pacotes do R.
+
+```{r, message=FALSE, warning=FALSE}
+library(car)
+library(ggplot2)
+knitr::write_bib(c("car","ggplot2"), "packages.bib")
+
+## Um novo arquivo packages.bib aparecerá na pasta do diretório com as referências.
+```
 
 4.  Encontrar caminhos de pastas com ***here***. Mesmo sem está no diretório da pasta, podemos executar os códigos usando o ***here***.
 
@@ -109,9 +127,9 @@ Os diagramas acima foram feitos com a linguagem ***mermaid*** que está no Quart
     #| out.width: "50%"
     #| fig.align: "center"                        
     #| fig.cap: "Um gatinho." 
-  
+      
     # Exemplo:
-    
+
     # #| echo: true                                  
     # #| out.width: "50%"
     # #| fig.align: "center"                        
