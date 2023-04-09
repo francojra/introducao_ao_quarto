@@ -120,7 +120,7 @@ Os diagramas acima foram feitos com a linguagem ***mermaid*** que está no Quart
     knitr::include_graphics("cat.png")
     ```
 
-6.  Mudança de chunks do R Markdown para chunks com \|#
+6.  Para fazer a mudança de chunks do R Markdown para chunks com \|#
 
     ```{r, echo = TRUE, results = "hide", message = FALSE, warning = FALSE, out.width = "50%", fig.align = 'center', fig.cap = "Um gatinho."}
 
