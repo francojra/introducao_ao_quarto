@@ -115,7 +115,7 @@ knitr::write_bib(c("car","ggplot2"), "packages.bib")
     ```{r, eval = TRUE}
     #install.packages("here")
     here::here()
-    here::here("cat.png")
+    here::here("cat.jpg")
     ```
 
 5.  Organização de chunks com \|#, onde cada argumento de configuração fica um abaixo do outro e não ao lado e separado por vírgula como no R Markdown.
@@ -131,16 +131,16 @@ knitr::write_bib(c("car","ggplot2"), "packages.bib")
     # #| echo: true                                  
     # #| out.width: "50%"
     # #| fig.align: "center"                        
-    # #| fig.cap: "Um gatinho." 
+    # #| fig.cap: "Um simpático gatinho." 
 
-    knitr::include_graphics("cat.png")
+    knitr::include_graphics("cat.jpg")
     ```
 
 6.  Para fazer a mudança de chunks do R Markdown para chunks com \|#
 
     ```{r, echo = TRUE, results = "hide", message = FALSE, warning = FALSE, out.width = "50%", fig.align = 'center', fig.cap = "Um gatinho."}
 
-    knitr::convert_chunk_header(input = "C:/Users/jeann/OneDrive/Área de Trabalho/introducao_quarto_markdown.qmd", type
+    knitr::convert_chunk_header(input = "C:/Users/jeann/Documents/Quarto_R/introducao_quarto/introducao_quarto_markdown.qmd", type
     = "multiline")
     ```
 
