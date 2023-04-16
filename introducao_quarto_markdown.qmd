@@ -14,7 +14,7 @@ institute: R-Ladies Natal
 
 Segundo \[Quarto\](<https://quarto.org>), o sistema pode ser definido como:
 
-> *\"Quarto é uma versão multilíngue da próxima geração do R Markdown (do RStudio) e inclui dezenas de novos recursos, ao mesmo tempo em que é capaz de renderizar a maioria dos arquivos `.Rmd` existentes sem modificação.\"*
+> *"Quarto é uma versão multilíngue da próxima geração do R Markdown (do RStudio) e inclui dezenas de novos recursos, ao mesmo tempo em que é capaz de renderizar a maioria dos arquivos `.Rmd` existentes sem modificação."*
 
 ![](images/d56e252c-00fa-4ff5-ab0b-d1c9acf8a3af_rw_1920.png){fig-align="center"}
 
@@ -35,6 +35,7 @@ Um documento Quarto chamado de ***.qmd*** é convertido através de um sistema c
 ![](images/b5217f2a-f129-4bf9-90dc-c5b9783d0ea8_rw_1920.png){fig-align="center"}
 
 ## 
+
 Vantagens em relação ao R Markdown
 
 O R Markdown conta com diversos pacotes que podem ser baixados no R para executar diveras funções, entre eles, **blogdown, rticles, xaringan, distill, knitr, bookdown, flexdashboard e rsconnect**. A vantagem do Quarto em relação a isso, é que ele unifica a funcionalidade de todos esses pacotes em uma interface de linha de comando sem precisar fazer o download desses pacotes.
@@ -83,30 +84,54 @@ Nesse arquivo .yml você também encontra essas principais estruturas de configu
 
 4.  **Lang**: língua do website (português, inglês, espanhol, etc.).
 
-Os diagramas abaixo mostram o processo de criação de websites, as etapas iniciais e os arquivos presentes como o .yml e .qmd. Os diagramas acima foram formados com a linguagem [Mermaid](https://mermaid.js.org/) inserida no Quarto e é feito dentro de um chunk.
+O diagrama abaixo mostra o processo de criação de websites com as etapas iniciais.
+
+::: {.callout-note appearance="simple"}
+## Diagrama com etapas para criação de site no Quarto.
 
 ```{mermaid}
 flowchart LR
+
   A(File) --> B(New File)
   B --> C(New Project)
   C --> D(New Directory)
-  D --> E[Quarto Website]
+  D --> F(Quarto Website)
+```
+:::
+
+Os arquivos presentes na criação dos websites são o .yml e .qmd. Esses belos diagramas foram criados com a linguagem [Mermaid](https://mermaid.js.org/) inserida no Quarto e é feito dentro de um chunk.
+
+::: {.callout-note appearance="simple"}
+## Diagrama com os conteúdos encontrados nos arquivos do site.
+
+```{mermaid}
+flowchart LR
+
+  id(Quarto Website) --> id1(Arquivo .yml)
+  id1(Arquivo .yml) <--> id2(Project)
+  id1(Arquivo .yml) <--> id3(Website)
+  id1(Arquivo .yml) <--> id4(Format)
+  
+  style id fill:#F9E2AF
+  style id1 fill:#f9f,stroke:#333,stroke-width:4px
+  style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#080808,stroke-dasharray: 5 5
+  style id3 fill:#bbf,stroke:#f66,stroke-width:2px,color:#080808,stroke-dasharray: 5 5
+  style id4 fill:#bbf,stroke:#f66,stroke-width:2px,color:#080808,stroke-dasharray: 5 5
 ```
 
 ```{mermaid}
 flowchart LR
-  E[Quarto Website] --> F(Arquivo .yml)
-  F <--> G[Project]
-  F <--> H[Website]
-  F <--> I[Format]
-```
 
-```{mermaid}
-flowchart LR
-  E[Quarto Website] --> J(Arquivos .qmd)
-  J <--> K[index.qmd]
-  J <--> L[hello.qmd]
+  id(Quarto Website) --> id2(Arquivo .qmd)
+  id2(Arquivo .qmd) <--> id3(index.qmd)
+  id2(Arquivo .qmd) <--> id4(hello.qmd)
+  
+  style id fill:#F9E2AF
+  style id2 fill:#f9f,stroke:#333,stroke-width:4px
+  style id3 fill:#bbf,stroke:#f66,stroke-width:2px,color:#080808,stroke-dasharray: 5 5
+  style id4 fill:#bbf,stroke:#f66,stroke-width:2px,color:#080808,stroke-dasharray: 5 5
 ```
+:::
 
 ## Algumas dicas especiais do Quarto
 
