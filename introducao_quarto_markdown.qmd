@@ -124,7 +124,7 @@ knitr::write_bib(c("car","ggplot2"), "packages.bib")
     #| echo: true                                  
     #| out.width: "50%"
     #| fig.align: "center"                        
-    #| fig.cap: "Um gatinho." 
+    #| fig.cap: "Um simpático gatinho." 
       
     # Exemplo:
 
@@ -138,7 +138,7 @@ knitr::write_bib(c("car","ggplot2"), "packages.bib")
 
 6.  Para fazer a mudança de chunks do R Markdown para chunks com \|#
 
-    ```{r, echo = TRUE, results = "hide", message = FALSE, warning = FALSE, out.width = "50%", fig.align = 'center', fig.cap = "Um gatinho."}
+    ```{r, echo = TRUE, results = "hide", message = FALSE, warning = FALSE, out.width = "50%", fig.align = 'center', fig.cap = "Um simpático gatinho."}
 
     knitr::convert_chunk_header(input = "C:/Users/jeann/Documents/Quarto_R/introducao_quarto/introducao_quarto_markdown.qmd", type
     = "multiline")
