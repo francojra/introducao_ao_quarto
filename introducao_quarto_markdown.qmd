@@ -1,7 +1,8 @@
 ---
 title: "Introdução ao Quarto"
 author: "Jeanne Franco"
-format: pdf
+format: html 
+# format: pdf
 editor: visual
 ---
 
@@ -17,7 +18,7 @@ O Quarto funciona em diferentes linguagens de programação como o **R, Python, 
 
 O Quarto produz diferentes arquivos como **PDF, HTML, Word, sites, livros, apresentações, artigos científicos e blogs**.
 
-[![](quarto_schematic.png){fig-align="center" width="400"}](https://ucsb-meds.github.io/creating-quarto-websites/)
+[![](quarto_schematic.png){fig-align="center" width="500"}](https://ucsb-meds.github.io/creating-quarto-websites/)
 
 O Quarto pode ser utilizado por **pesquisadores, desenvolvedores e educadores**.
 
