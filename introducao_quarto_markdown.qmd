@@ -8,13 +8,19 @@ editor: visual
 
 ## Sobre o Quarto
 
-Quarto é um novo **sistema de publicação científica e técnica de código aberto**. O objetivo é fazer o processo de criação de documentos e colaboração muito melhor.
+***Quarto*** é um novo **sistema de publicação científica e técnica de código aberto**. O objetivo desse sistema é fazer o processo de criação de documentos e colaboração muito melhor. Quarto capacita o usuário a tecer um **documento com conteúdo de texto e código executável junto**.
 
-Quarto capacita o usuário a tecer um **documento com conteúdo de texto e código executável junto**. Para aprender mais sobre o sistema, acesse o site do Quarto em: <https://quarto.org>.
+Segundo \[quarto.org\](<https://quarto.org>), o sistema pode ser definido como:
 
-O Quarto tem a vantagem de unificar e estender o ecossistema do R Markdown, portanto, ele serve bem para quem já faz uso diário do R Markdown, mas também serve para não usuários do R Markdown.
+> *\"Quarto é uma versão multilíngue da próxima geração do R Markdown (do RStudio) e inclui dezenas de novos recursos, ao mesmo tempo em que é capaz de renderizar a maioria dos arquivos `.Rmd` existentes sem modificação.\"*
 
-O Quarto funciona em diferentes linguagens de programação como o **R, Python, Julia e Observable** e os arquivos podem ser compartilhados por colaboradores que utilizam diferentes linguagens.
+![](images/d56e252c-00fa-4ff5-ab0b-d1c9acf8a3af_rw_1920.png){fig-align="center"}
+
+O Quarto tem a vantagem de unificar e estender o ecossistema do ***R Markdown***, portanto, ele serve bem tanto para quem já faz uso diário do R Markdown como para não usuários do R Markdown.
+
+A redação de textos continua sendo a linguagem de marcação ***Markdown*** e também com o uso de ***chunks*** para a edição de códigos.
+
+O Quarto funciona em diferentes linguagens de programação como o ***R*****, *Python*, *Julia* e *Observable*** e os arquivos podem ser compartilhados por colaboradores que utilizam diferentes linguagens.
 
 O Quarto produz diferentes arquivos como **PDF, HTML, Word, sites, livros, apresentações, artigos científicos e blogs**.
 
