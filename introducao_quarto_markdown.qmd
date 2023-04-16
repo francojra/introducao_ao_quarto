@@ -16,7 +16,7 @@ Segundo [Quarto](https://quarto.org), o sistema pode ser definido como:
 
 > *"Quarto é uma versão multilíngue da próxima geração do R Markdown (do RStudio) e inclui dezenas de novos recursos, ao mesmo tempo em que é capaz de renderizar a maioria dos arquivos `.Rmd` existentes sem modificação."*
 
-![](images/d56e252c-00fa-4ff5-ab0b-d1c9acf8a3af_rw_1920.png){fig-align="center" width="1600"}
+![](images/d56e252c-00fa-4ff5-ab0b-d1c9acf8a3af_rw_1920.png){fig-align="center" width="800"}
 
 O Quarto tem a vantagem de unificar e estender o ecossistema do ***R Markdown***, portanto, ele serve bem tanto para quem já faz uso diário do R Markdown como para não usuários do R Markdown.
 
@@ -59,6 +59,8 @@ Opções de configuração para todo o documento podem ser definidas no próprio
 O site [Quarto Pub](https://quartopub.com/) torna o processo de publicação online de arquivos HTML muito mais fácil apenas usando o comando ***quarto publish quarto-pub*** no Terminal do RStudio.
 
 ## Criação de websites
+
+![](images/3562a6a2-93d6-4507-93f4-1294cd4cd02b_rw_1920.png){fig-align="center" width="800"}
 
 Com o Quarto você pode criar e publicar sites de forma muito rápida e fácil. Para isso você pode seguir essas etapas:
 
@@ -133,7 +135,7 @@ flowchart LR
 
 ## Algumas dicas especiais do Quarto
 
-![](images/596ce690-7bab-4a5f-b319-e0e0c79d8a22_rw_1920.png){fig-align="center" width="1600"}
+![](images/596ce690-7bab-4a5f-b319-e0e0c79d8a22_rw_1920.png){fig-align="center" width="800"}
 
 1.  No cabeçalho YAML é possível adicionar o argumento ***code-link: true***. Esse argumento permite que os leitores tenham acesso a links dos sites com informações sobre os códigos. Por exemplo, no código ***ggplot***, o leitor poderá clicar nele e acessar o site com informações do pacote ***ggplot2***. Essa funcionalidade pode servir como uma importante ferramenta de ensino.
 
@@ -161,14 +163,14 @@ knitr::write_bib(c("car","ggplot2"), "packages.bib")
 
     ```{r}
     #| echo: true                                  
-    #| out.width: "50%"
+    #| out.width: "80%"
     #| fig.align: "center"                        
     #| fig.cap: "Um simpático gatinho." 
       
     # Exemplo:
 
     # #| echo: true                                  
-    # #| out.width: "50%"
+    # #| out.width: "80%"
     # #| fig.align: "center"                        
     # #| fig.cap: "Um simpático gatinho." 
 
@@ -177,7 +179,7 @@ knitr::write_bib(c("car","ggplot2"), "packages.bib")
 
 6.  Para fazer a mudança de chunks do R Markdown para chunks com \|#
 
-    ```{r, echo = TRUE, results = "hide", message = FALSE, warning = FALSE, out.width = "50%", fig.align = 'center', fig.cap = "Um simpático gatinho."}
+    ```{r, echo = TRUE, results = "hide", message = FALSE, warning = FALSE, out.width = "80%", fig.align = 'center', fig.cap = "Um simpático gatinho."}
 
     knitr::convert_chunk_header(input = "C:/Users/jeann/Documents/Quarto_R/introducao_quarto/introducao_quarto_markdown.qmd", type
     = "multiline")
