@@ -26,7 +26,7 @@ O Quarto funciona em diferentes linguagens de programação como o ***R*****, *P
 
 O Quarto produz diferentes arquivos como **PDF, HTML, Word, sites, livros, apresentações, artigos científicos e blogs**.
 
-[![](quarto_schematic.png){fig-align="center" width="500"}](https://ucsb-meds.github.io/creating-quarto-websites/)
+[![](quarto_schematic.png){fig-align="center" width="800"}](https://ucsb-meds.github.io/creating-quarto-websites/)
 
 Um documento Quarto chamado de ***.qmd*** é convertido através de um sistema chamado ***Pandoc*** que utiliza o documento de texto Markdown com códigos .qmd e transformaele em documentosPDF, Word, HTML, etc. Veja o esquema de ilustração abaixo.
 
