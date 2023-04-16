@@ -18,7 +18,9 @@ Segundo \[quarto.org\](<https://quarto.org>), o sistema pode ser definido como:
 
 O Quarto tem a vantagem de unificar e estender o ecossistema do ***R Markdown***, portanto, ele serve bem tanto para quem já faz uso diário do R Markdown como para não usuários do R Markdown.
 
-A redação de textos continua sendo a linguagem de marcação ***Markdown*** e também com o uso de ***chunks*** para a edição de códigos.
+A redação de textos continua sendo a linguagem de marcação ***Markdown*** e também com o uso de ***chunks*** para a edição de códigos. Portanto, o Quarto pode ser utilizado por **pesquisadores, desenvolvedores e educadores**.
+
+## Como funciona o sistema Quarto
 
 O Quarto funciona em diferentes linguagens de programação como o ***R*****, *Python*, *Julia* e *Observable*** e os arquivos podem ser compartilhados por colaboradores que utilizam diferentes linguagens.
 
@@ -26,9 +28,12 @@ O Quarto produz diferentes arquivos como **PDF, HTML, Word, sites, livros, apres
 
 [![](quarto_schematic.png){fig-align="center" width="500"}](https://ucsb-meds.github.io/creating-quarto-websites/)
 
-O Quarto pode ser utilizado por **pesquisadores, desenvolvedores e educadores**.
+Um documento Quarto chamado de ***.qmd*** é convertido através de um sistema chamado ***Pandoc*** que utiliza o documento de texto Markdown com códigos .qmd e transformaele em documentosPDF, Word, HTML, etc. Veja o esquema de ilustração abaixo.
 
-## Vantagens em relação ao R Markdown
+![](images/b5217f2a-f129-4bf9-90dc-c5b9783d0ea8_rw_1920.png){fig-align="center"}
+
+## 
+Vantagens em relação ao R Markdown
 
 O R Markdown conta com diversos pacotes que podem ser baixados no R para executar diveras funções, entre eles, **blogdown, rticles, xaringan, distill, knitr, bookdown, flexdashboard e rsconnect**. A vantagem do Quarto em relação a isso, é que ele unifica a funcionalidade de todos esses pacotes em uma interface de linha de comando sem precisar fazer o download desses pacotes.
 
