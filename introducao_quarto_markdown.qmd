@@ -28,7 +28,7 @@ O Quarto funciona em diferentes linguagens de programação como o ***R*****, *P
 
 O Quarto produz diferentes arquivos como **PDF, HTML, Word, sites, livros, apresentações, artigos científicos e blogs**.
 
-[![](quarto_schematic.png){fig-align="center" width="800"}](https://ucsb-meds.github.io/creating-quarto-websites/)
+![](images/quarto_schematic.png){fig-align="center"}
 
 Um documento Quarto chamado de ***.qmd*** é convertido através de um sistema chamado ***Pandoc*** que utiliza o documento de texto Markdown com códigos .qmd e transformaele em documentosPDF, Word, HTML, etc. Veja o esquema de ilustração abaixo.
 
@@ -58,6 +58,29 @@ Opções de configuração para todo o documento podem ser definidas no próprio
 
 O site [Quarto Pub](https://quartopub.com/) torna o processo de publicação online de arquivos HTML muito mais fácil apenas usando o comando ***quarto publish quarto-pub*** no Terminal do RStudio.
 
+## Estrutura de um documento em Quarto
+
+A estrutura geral dos documentos em Quarto são três: **cabeçalho .yml, texto e código**.
+
+1.  **Cabeçalho .yml:** cabeçalho com as informações do tipo de documento (PDF, HTML, Word, etc.), autoria, título, subtítulo, data, e formatações como espaçamento, arquivos de bibliografia, entre outros.
+
+2.  **Texto:** usado com a sintaxe Markdown;
+
+3.  **Códigos:** códigos executáveis que são digitados dentro de Chunks e multilíngue, pois podem ser usados em linguagem Python, R, Julia, e outros.
+
+```{mermaid}
+    flowchart LR
+
+      id1(Documento Quarto) <--> id2(Cabeçalho .yml)
+      id1(Documento Quarto) <--> id3(Texto)
+      id1(Documento Quarto) <--> id4(Códigos)
+      
+      style id1 fill:#B0DAFF,stroke:#333,stroke-width:3px
+      style id2 fill:#FEFF86,stroke:#333,stroke-width:3px
+      style id3 fill:#FEFF86,stroke:#333,stroke-width:3px
+      style id4 fill:#FEFF86,stroke:#333,stroke-width:3px
+```
+
 ## Criação de websites
 
 ![](images/3562a6a2-93d6-4507-93f4-1294cd4cd02b_rw_1920.png){fig-align="center" width="800"}
@@ -72,7 +95,27 @@ Com o Quarto você pode criar e publicar sites de forma muito rápida e fácil. 
 
 Após isso, você indicará o diretório do computador em que irá hospedar o seu projeto. No projeto você encontrará dois arquivos .qmd e um arquivo .yml. Nos arquivos .qmd você adicionará os conteúdos do seu site e no arquivo .yml você adicionará as configurações do seu site como apresentado na figura abaixo:
 
-![Arquivo .yml para Website criado no Quarto.](site_quarto.png){fig-align="center" width="600"}
+::: {.callout-note appearance="simple"}
+## Arquivo \_quarto.yml
+
+``` r
+project:
+  output-dir: _output
+
+toc: true
+number-sections: true
+bibliography: references.bib  
+  
+format:
+  html:
+    css: styles.css
+    html-math-method: katex
+  pdf:
+    documentclass: report
+    margin-left: 30mm
+    margin-right: 30mm
+```
+:::
 
 Nesse arquivo .yml você também encontra essas principais estruturas de configuração:
 
@@ -83,6 +126,31 @@ Nesse arquivo .yml você também encontra essas principais estruturas de configu
 3.  **Format**: tipo de arquivo (HTML), o tema (***theme***) para estética do site, a indicação do arquivo ***css***, entre outros estilos;
 
 4.  **Lang**: língua do website (português, inglês, espanhol, etc.).
+
+Veja esse outro exemplo de um cabeçalho YAML que contém diversos tipos de configurações:
+
+::: {.callout-note appearance="simple"}
+``` r
+Exemplo de cabeçalho YAML
+
+---
+title: "Meu primeiro relatório" # -----> Título
+subtitle: "Exemplo: Relatório em Quarto" # -----> Subtítulo
+author: "Ariane Hayana" # -----> Autoria
+date: "2023-02-08" # -----> Data de publicação
+date-format: short # -----> Formato de data curto: dd/mm/aaaa
+lang: pt # -----> Linguagem: português
+format: 
+  html: 
+    code-fold: true # -----> code-fold: `true` para "ocultar" o bloco de códigos
+    theme: 
+      light: [pulse,custom.scss] # Tema modo claro
+      dark: [cyborg,custom.scss] # Tema modo escuro
+title-block-banner: true # -----> Estilo de banner no topo do documento
+bibliography: references.bib # -----> Referências do documento
+---
+```
+:::
 
 O diagrama abaixo mostra o processo de criação de websites com as etapas iniciais.
 
