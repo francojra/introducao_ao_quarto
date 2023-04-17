@@ -30,7 +30,7 @@ O Quarto produz diferentes arquivos como **PDF, HTML, Word, sites, livros, apres
 
 ![](images/quarto_schematic.png){fig-align="center"}
 
-Um documento Quarto chamado de ***.qmd*** é convertido através de um sistema chamado ***Pandoc*** que utiliza o documento de texto Markdown com códigos .qmd e transformaele em documentosPDF, Word, HTML, etc. Veja o esquema de ilustração abaixo.
+Um documento Quarto chamado de ***`.qmd`*** é convertido através de um sistema chamado ***Pandoc*** que utiliza o documento de texto Markdown com códigos .qmd e transformaele em documentos PDF, Word, HTML, etc. Veja o esquema de ilustração abaixo.
 
 ![](images/b5217f2a-f129-4bf9-90dc-c5b9783d0ea8_rw_1920.png){fig-align="center"}
 
@@ -52,17 +52,17 @@ O Quarto conta com uma implementação atrativa de output como:
 
 -   Chunks organizados
 
-O Quarto permite fazer a **mudança de formatos** (por exemplo, de PDF para HTML) facilmente. No YAML do arquivo, podemos subsituir e trocar o output de interesse sem modificar o conteúdo de nosso documento.
+O Quarto permite fazer a **mudança de formatos** (por exemplo, de PDF para HTML) **facilmente**. No YAML do arquivo, podemos subsituir e trocar o output de interesse sem modificar o conteúdo de nosso documento.
 
-Opções de configuração para todo o documento podem ser definidas no próprio YAML através da função ***execute***. Essa é mais uma vantagem em relação ao R Markdown em que é preciso definir um código mais complexo no início do documento.
+Opções de configuração para todo o documento podem ser definidas no próprio YAML através da função ***`execute`***. Essa é mais uma vantagem em relação ao R Markdown em que é preciso definir um código mais complexo no início do documento.
 
-O site [Quarto Pub](https://quartopub.com/) torna o processo de publicação online de arquivos HTML muito mais fácil apenas usando o comando ***quarto publish quarto-pub*** no Terminal do RStudio.
+O site [Quarto Pub](https://quartopub.com/) torna o processo de publicação online de arquivos HTML muito mais fácil apenas usando o comando ***`quarto publish quarto-pub`*** no Terminal do RStudio.
 
 ## Estrutura de um documento em Quarto
 
 A estrutura geral dos documentos em Quarto são três: **cabeçalho .yml, texto e código**.
 
-1.  **Cabeçalho .yml:** cabeçalho com as informações do tipo de documento (PDF, HTML, Word, etc.), autoria, título, subtítulo, data, e formatações como espaçamento, arquivos de bibliografia, entre outros.
+1.  **Cabeçalho `.yml`:** cabeçalho com as informações do tipo de documento (PDF, HTML, Word, etc.), autoria, título, subtítulo, data, e formatações como espaçamento, arquivos de bibliografia, entre outros.
 
 2.  **Texto:** usado com a sintaxe Markdown;
 
@@ -93,7 +93,7 @@ Com o Quarto você pode criar e publicar sites de forma muito rápida e fácil. 
 
 3.  Clique em **Quarto Website**.
 
-Após isso, você indicará o diretório do computador em que irá hospedar o seu projeto. No projeto você encontrará dois arquivos .qmd e um arquivo .yml. Nos arquivos .qmd você adicionará os conteúdos do seu site e no arquivo .yml você adicionará as configurações do seu site como apresentado na figura abaixo:
+Após isso, você indicará o diretório do computador em que irá hospedar o seu projeto. No projeto você encontrará dois arquivos .qmd e um arquivo `.yml`. Nos arquivos .qmd você adicionará os conteúdos do seu site e no arquivo `.yml` você adicionará as configurações do seu site como apresentado na figura abaixo:
 
 ::: {.callout-note appearance="simple"}
 ## Arquivo \_quarto.yml
@@ -117,15 +117,15 @@ format:
 ```
 :::
 
-Nesse arquivo .yml você também encontra essas principais estruturas de configuração:
+Nesse arquivo `.yml` você também encontra essas principais estruturas de configuração:
 
-1.  **Project**: indicação do tipo (***type***) de projeto, no caso, website;
+1.  **`Project`**: indicação do tipo (***`type`***) de projeto, no caso, website;
 
-2.  **Website**: Configurações do site, como título (***title***), abas (***navbar***), conteúdo presente em cada aba ***href*** (arquivos .qmd), localização das abas no lado esquerdo (***left***) ou direito, etc;
+2.  **`Website`**: Configurações do site, como título (***`title`***), abas (***`navbar`***), conteúdo presente em cada aba ***`href`*** (arquivos .qmd), localização das abas no lado esquerdo (***`left`***) ou direito, etc;
 
-3.  **Format**: tipo de arquivo (HTML), o tema (***theme***) para estética do site, a indicação do arquivo ***css***, entre outros estilos;
+3.  **`Format`**: tipo de arquivo (HTML), o tema (***`theme`***) para estética do site, a indicação do arquivo ***`css`***, entre outros estilos;
 
-4.  **Lang**: língua do website (português, inglês, espanhol, etc.).
+4.  ***`Lang`***: língua do website (português, inglês, espanhol, etc.).
 
 Veja esse outro exemplo de um cabeçalho YAML que contém diversos tipos de configurações:
 
@@ -152,6 +152,22 @@ bibliography: references.bib # -----> Referências do documento
 ```
 :::
 
+Detalhes sobre as configurações do cabeçalho .yml abaixo:
+
+-   `date-format`: formato curto de data. Existem diversos formatos possíveis que podem ser consultados em [Quarto.org](https://quarto.org/docs/reference/dates.html#date-formatting);
+
+-   `lang`: identifica o idioma principal do documento. Outras idiomas podem ser o espanhol (`lang: es`), o inglês (`lang: en`) e francês (`lang: fr`), por exemplo;
+
+-   `code-fold`: quando igual a `true`, o bloco de códigos é ocultado, podendo ser consultado ao clicar na palavra \"*Código*\";
+
+-   `theme: light ou dark`: tema utilizado em nosso documento. Podemos customizar utilizando um arquivo `.scss`;
+
+-   `title-block-banner: true`: se igual a `true`, esta configuração insere um bloco de título no estilo de banner no topo do documento;
+
+-   `bibliography`: referências utilizadas no documento. Trata-se de um arquivo `.bib`.
+
+## Diagrama explicativo 
+
 O diagrama abaixo mostra o processo de criação de websites com as etapas iniciais.
 
 ::: {.callout-note appearance="simple"}
@@ -167,7 +183,7 @@ flowchart LR
 ```
 :::
 
-Os arquivos presentes na criação dos websites são o .yml e .qmd. Esses belos diagramas foram criados com a linguagem [Mermaid](https://mermaid.js.org/) inserida no Quarto e é feito dentro de um chunk.
+Os arquivos presentes na criação dos websites são o `.yml` e `.qmd`. Esses belos diagramas foram criados com a linguagem [Mermaid](https://mermaid.js.org/) inserida no Quarto e é feito dentro de um chunk.
 
 ::: {.callout-note appearance="simple"}
 ## Diagrama com os conteúdos encontrados nos arquivos do site.
@@ -205,9 +221,9 @@ flowchart LR
 
 ![](images/596ce690-7bab-4a5f-b319-e0e0c79d8a22_rw_1920.png){fig-align="center" width="800"}
 
-1.  No cabeçalho YAML é possível adicionar o argumento ***code-link: true***. Esse argumento permite que os leitores tenham acesso a links dos sites com informações sobre os códigos. Por exemplo, no código ***ggplot***, o leitor poderá clicar nele e acessar o site com informações do pacote ***ggplot2***. Essa funcionalidade pode servir como uma importante ferramenta de ensino.
+1.  No cabeçalho YAML é possível adicionar o argumento ***`code-link: true`***. Esse argumento permite que os leitores tenham acesso a links dos sites com informações sobre os códigos. Por exemplo, no código ***`ggplot`***, o leitor poderá clicar nele e acessar o site com informações do pacote ***ggplot2***. Essa funcionalidade pode servir como uma importante ferramenta de ensino.
 
-2.  No formato de apresentações ***reaveals.js*** podemos adicionar o argumento ***chalkboard: true*** no cabeçalho YAML e obter ferramentas de ensino como quadro-negro e expansão de partes dos slides durante a apresentação.
+2.  No formato de apresentações ***reaveals.js*** podemos adicionar o argumento ***`chalkboard: true`*** no cabeçalho YAML e obter ferramentas de ensino como quadro-negro e expansão de partes dos slides durante a apresentação.
 
 3.  Citação de referências de pacotes do R.
 
@@ -219,7 +235,7 @@ knitr::write_bib(c("car","ggplot2"), "packages.bib")
 ## Um novo arquivo packages.bib aparecerá na pasta do diretório com as referências.
 ```
 
-4.  Encontrar caminhos de pastas com ***here***. Mesmo sem está no diretório da pasta, podemos executar os códigos usando o ***here***.
+4.  Encontrar caminhos de pastas com ***`here`***. Mesmo sem está no diretório da pasta, podemos executar os códigos usando o ***`here`***.
 
     ```{r, eval = TRUE}
     #install.packages("here")
@@ -227,7 +243,7 @@ knitr::write_bib(c("car","ggplot2"), "packages.bib")
     here::here("cat.png")
     ```
 
-5.  Organização de chunks com \|#, onde cada argumento de configuração fica um abaixo do outro e não ao lado e separado por vírgula como no R Markdown.
+5.  Organização de chunks com **#\|**, onde cada argumento de configuração fica um abaixo do outro e não ao lado e separado por vírgula como no R Markdown.
 
     ```{r}
     #| echo: true                                  
@@ -245,7 +261,7 @@ knitr::write_bib(c("car","ggplot2"), "packages.bib")
     knitr::include_graphics("cat.png")
     ```
 
-6.  Para fazer a mudança de chunks do R Markdown para chunks com \|#
+6.  Para fazer a mudança de chunks do R Markdown para chunks com **#\|.**
 
     ```{r, echo = TRUE, results = "hide", message = FALSE, warning = FALSE, out.width = "80%", fig.align = 'center', fig.cap = "Um simpático gatinho."}
 
@@ -255,7 +271,7 @@ knitr::write_bib(c("car","ggplot2"), "packages.bib")
 
 7.  Adicionar ícones ao texto com o Font Awesome Extension.
 
---- Instalação no terminal do RStudio: ***quarto install extension quarto-ext/fontawesome***
+--- Instalação no terminal do RStudio: ***`quarto install extension quarto-ext/fontawesome`***
 
 Visite o [link](https://github.com/quarto-ext/fontawesome) para adicionar exemplos de ícones como esse:
 
@@ -267,9 +283,11 @@ Visite o [link](https://github.com/quarto-ext/fontawesome) para adicionar exempl
 
 [BioC 2022 - Hello, Quarto!](https://www.youtube.com/watch?v=YVa5cdkypbw&list=WL&index=14)
 
+[ÇETINKAYA-RUNDEL & LOWNDES QUARTO KEYNOTE](https://allisonhorst.com/cetinkaya-rundel-lowndes-quarto-keynote)
+
 [Domestic cat](https://www.nationalgeographic.com/animals/mammals/facts/domestic-cat)
 
-[ÇETINKAYA-RUNDEL & LOWNDES QUARTO KEYNOTE](https://allisonhorst.com/cetinkaya-rundel-lowndes-quarto-keynote)
+[E aí, vamos falar de Quarto?](https://rladies-sp.org/posts/2023-02-tutorial-quarto/)
 
 [Mermaid](https://mermaid.js.org/)
 
